@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <meta name="description" content="Insure With Gihan customer service app">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>Insure With Gihan</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brandmark">IWG</div>
+    <div class="brand"><strong>INSURE WITH GIHAN</strong><small>Customer Service</small></div>
+    <button id="langBtn" class="lang" type="button">සිංහල</button>
+  </header>
+
+  <main>
+    <section id="loginView" class="login-wrap">
+      <div class="hero">
+        <span class="eyebrow" data-en="YOUR INSURANCE, SIMPLIFIED" data-si="ඔබේ රක්ෂණ සේවාවන් දැන් පහසුවෙන්">YOUR INSURANCE, SIMPLIFIED</span>
+        <h1 data-en="Welcome to your insurance hub." data-si="ඔබේ රක්ෂණ සේවා මධ්‍යස්ථානයට සාදරයෙන් පිළිගනිමු.">Welcome to your insurance hub.</h1>
+        <p data-en="View policy information, check payment updates and request support in one place." data-si="ඔප්පු තොරතුරු බලන්න, ගෙවීම් තත්ත්වය පරීක්ෂා කරන්න සහ සහාය ඉල්ලන්න.">View policy information, check payment updates and request support in one place.</p>
+      </div>
+      <div class="panel login-panel">
+        <h2 data-en="Customer sign in" data-si="පාරිභෝගික පිවිසුම">Customer sign in</h2>
+        <label for="phone" data-en="Mobile number" data-si="ජංගම දුරකථන අංකය">Mobile number</label>
+        <input id="phone" type="tel" inputmode="tel" placeholder="07X XXX XXXX" autocomplete="tel">
+        <button id="sendOtp" class="primary" data-en="Continue with OTP" data-si="OTP සමඟ ඉදිරියට">Continue with OTP</button>
+        <div id="otpArea" class="hidden">
+          <label for="otp" data-en="Enter verification code" data-si="ලැබුණු කේතය ඇතුළත් කරන්න">Enter verification code</label>
+          <input id="otp" inputmode="numeric" maxlength="6" placeholder="6-digit code">
+          <p class="hint" data-en="Prototype preview only: use 123456. Real SMS OTP is not connected yet." data-si="Demo පරීක්ෂාව සඳහා 123456 භාවිත කරන්න. සැබෑ SMS OTP සේවාව තවම සම්බන්ධ කර නැත.">Prototype preview only: use 123456. Real SMS OTP is not connected yet.</p>
+          <button id="verifyOtp" class="primary" data-en="Verify and open demo" data-si="තහවුරු කර විවෘත කරන්න">Verify and open demo</button>
+        </div>
+        <p id="loginMsg" class="hint" role="status"></p>
+        <p class="legal" data-en="Do not enter real policy or payment information in this preview." data-si="මෙම පෙරදසුනට සැබෑ ඔප්පු හෝ ගෙවීම් තොරතුරු ඇතුළත් නොකරන්න.">Do not enter real policy or payment information in this preview.</p>
+      </div>
+    </section>
+
+    <section id="appView" class="hidden">
+      <div class="welcome-row">
+        <div><span class="eyebrow" data-en="CUSTOMER SPACE" data-si="පාරිභෝගික ප්‍රදේශය">CUSTOMER SPACE</span><h1 data-en="Hello, Customer" data-si="ආයුබෝවන්, පාරිභෝගිකයා">Hello, Customer</h1><p data-en="Here is your service overview." data-si="ඔබේ සේවා සාරාංශය මෙන්න.">Here is your service overview.</p></div>
+        <button id="logout" class="ghost" data-en="Sign out" data-si="ඉවත් වන්න">Sign out</button>
+      </div>
+      <div class="notice"><strong data-en="Demo account" data-si="Demo ගිණුම">Demo account</strong><span data-en="Sample information only — connect a secure backend before serving customers." data-si="උදාහරණ තොරතුරු පමණි — පාරිභෝගිකයන්ට ලබාදීමට පෙර ආරක්ෂිත backend එකක් සම්බන්ධ කරන්න.">Sample information only — connect a secure backend before serving customers.</span></div>
+      <div class="stats">
+        <article class="stat"><span data-en="Policies" data-si="ඔප්පු">Policies</span><b>02</b></article>
+        <article class="stat"><span data-en="Next premium" data-si="ඊළඟ වාරිකය">Next premium</span><b>15 Nov</b></article>
+        <article class="stat"><span data-en="Payment status" data-si="ගෙවීම් තත්ත්වය">Payment status</span><b class="green" data-en="Up to date" data-si="යාවත්කාලීනයි">Up to date</b></article>
+      </div>
+      <h2 data-en="Your services" data-si="ඔබේ සේවාවන්">Your services</h2>
+      <div class="service-grid">
+        <article class="service"><div class="ico">▣</div><h3 data-en="My policies" data-si="මගේ රක්ෂණ ඔප්පු">My policies</h3><p data-en="Policy details and cover summary" data-si="ඔප්පු විස්තර සහ ආවරණ සාරාංශය">Policy details and cover summary</p><span class="tag">2 <span data-en="sample policies" data-si="උදාහරණ ඔප්පු">sample policies</span></span></article>
+        <article class="service"><div class="ico">↗</div><h3 data-en="Premium payments" data-si="වාරික ගෙවීම්">Premium payments</h3><p data-en="Review due dates and verified status" data-si="ගෙවිය යුතු දිනයන් සහ තහවුරු කළ තත්ත්වය බලන්න">Review due dates and verified status</p><span class="tag" data-en="Agent verified" data-si="නියෝජිතයා තහවුරු කරයි">Agent verified</span></article>
+        <article class="service"><div class="ico">◷</div><h3 data-en="Reminders" data-si="මතක් කිරීම්">Reminders</h3><p data-en="Upcoming premium reminders" data-si="ඉදිරි වාරික මතක් කිරීම්">Upcoming premium reminders</p><span class="tag" data-en="Preview" data-si="පෙරදසුන">Preview</span></article>
+        <article class="service"><div class="ico">＋</div><h3 data-en="Claim assistance" data-si="හිමිකම් සහාය">Claim assistance</h3><p data-en="Ask for help with a claim" data-si="හිමිකම් ඉල්ලීමක් සඳහා සහාය ලබාගන්න">Ask for help with a claim</p><span class="tag" data-en="Request support" data-si="සහාය ඉල්ලන්න">Request support</span></article>
+      </div>
+      <div class="bottom-grid">
+        <article class="panel"><h2 data-en="Need help?" data-si="උදව් අවශ්‍යද?">Need help?</h2><p data-en="Contact Gihan for policy questions, payment checks or claim guidance." data-si="ඔප්පු, ගෙවීම් හෝ හිමිකම් පිළිබඳ සහාය සඳහා Gihan අමතන්න.">Contact Gihan for policy questions, payment checks or claim guidance.</p><a class="primary linkbtn" href="https://wa.me/94741259416" target="_blank" rel="noopener">WhatsApp support</a></article>
+        <article class="panel"><h2 data-en="Admin preview" data-si="Admin පෙරදසුන">Admin preview</h2><p data-en="A separate, protected admin area will manage customers and agent-verified payment statuses." data-si="වෙනම ආරක්ෂිත Admin ප්‍රදේශයකින් පාරිභෝගිකයන් සහ නියෝජිතයා තහවුරු කළ ගෙවීම් තත්ත්වයන් කළමනාකරණය කරනු ඇත.">A separate, protected admin area will manage customers and agent-verified payment statuses.</p><span class="tag">Backend not connected</span></article>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Insure With Gihan · <span data-en="Independent customer service preview" data-si="පාරිභෝගික සේවා පෙරදසුන">Independent customer service preview</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
